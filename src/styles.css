@@ -1,5 +1,4 @@
 * {
-
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -84,3 +83,8 @@ a:active, a {
 }
 
 /* ---------------------------------- */
+
+.about {
+    color: white;
+    font-size: 2rem;
+}
