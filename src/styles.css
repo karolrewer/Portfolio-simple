@@ -1,0 +1,86 @@
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* we can create this advanced gradient using angrytools.com */
+.container__all {
+    width: 100vw;
+    min-height: 100vh;
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+}
+
+a:active, a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.navbar__logo {
+    font-size: 2.5rem;
+    padding-left: 6rem;
+    color: white;
+}
+
+.navbar__main {
+    font-size: 2.5rem;
+    color: white;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar__icons {
+    font-size: 2.5rem;
+    padding-right: 6rem;
+    color: white;
+}
+
+.home {
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.home__text {
+    font-size: 3rem;
+}
+
+.home__image {
+    /* max-width: 00px; */
+}
+
+.home__image--img {
+    max-width: 600px;
+}
+
+/* ---------------------------------- */
