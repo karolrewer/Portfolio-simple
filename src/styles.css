@@ -9,6 +9,11 @@ html {
     font-size: 62.5%;
 }
 
+body {
+  font-family: 'Montserrat', "calibri", sans-serif;
+}
+
+
 
 /* ====================  
 CSS responsible for background color 
@@ -16,7 +21,7 @@ CSS responsible for background color
 
 
 .container__all {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
 
     /* ff 3.6+ */
@@ -74,29 +79,48 @@ a:active, a {
 
 
 /* ====================  
+CSS responsible for section headers
+====================  */
+
+.section__header {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  /* padding: 10rem 0; */
+  font-weight: bold;
+}
+
+
+
+
+
+
+/* ====================  
 CSS responsible for HOME section 
 ====================  */
 
 
-.home {
+.container__home {
     padding-top: 6rem;
     display: flex;
     flex-direction: row;
     color: white;
     justify-content:space-around;
     align-items: center;
+    min-height: 100vh;
 }
 
 .home__text {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .home__image {
-    z-index: 10;
+  z-index: 10;
 }
 
 .home__image--img {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 
@@ -104,10 +128,149 @@ CSS responsible for HOME section
 CSS responsible for ABOUT section 
 ====================  */
 
+.container__about {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content:space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 6rem;
+  min-height: 100vh;
+}
 
-.about {
+.about__image {
+  z-index: 10;
+}
+
+.about__image--img {
+  max-width: 600px;
+}
+
+.about__text {
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding: 0 2rem;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+}
+
+/* css for skills section */
+
+.container__skills {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content:space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 6rem;
+  min-height: 100vh;
+}
+
+.skills__text {
+  color: white;
+  font-size: 2.5rem;
+  padding: 0 2rem;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+}
+
+/* css for spinning cube */
+
+.icons__techcube {
+  width: 200px;
+  height: 200px;
+}
+
+.stage-cube-cont {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  padding: 18%;
+  margin-left: 0;
+  position: relative;
+  right: 0;
+  left: 100;
+  /* overflow: hidden; */
+  justify-content: end;
+  display: flex;
+}
+
+.cubespinner {
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
+  margin-left: calc(50% - 100px);
+}
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0px lightyellow;
+}
+
+.face1 {
+  transform: translateZ(100px);
+  color: #dd0031;
+}
+.face2 {
+  transform: rotateY(90deg) translateZ(100px);
+  color: #f06529;
+}
+.face3 {
+  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+  color: #28a4d9;
+}
+.face4 {
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+  color: #5ed4f4;
+}
+.face5 {
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+  color: #efd81d;
+}
+.face6 {
+  transform: rotateX(-90deg) translateZ(100px);
+  color: #ec4d28;
+}
+
+
+@keyframes spincube {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateX(0deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
 }
 
 
