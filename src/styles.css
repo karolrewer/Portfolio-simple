@@ -52,23 +52,35 @@ a:active, a {
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 6rem;
+  background-color: rgba(4, 12, 24, 0.8);
+  z-index: 20;
 }
 
 .navbar__logo {
     font-size: 2.5rem;
     padding-left: 6rem;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar__main {
     font-size: 2.5rem;
     color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 3rem;
+    font-weight: bold;
 }
 
 .navbar__icons {
@@ -77,6 +89,7 @@ a:active, a {
     color: white;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
 }
 
@@ -99,7 +112,14 @@ CSS responsible for section headers
   font-weight: bold;
 }
 
+.grow { 
+  transition: all .2s ease-in-out; 
+}
 
+.grow:hover { 
+  transform: scale(1.2); 
+  color: #5bd4b4;
+}
 
 
 
@@ -128,6 +148,7 @@ CSS responsible for HOME section
 }
 
 .home__image--img {
+  width: 30vw;
   max-width: 600px;
 }
 
