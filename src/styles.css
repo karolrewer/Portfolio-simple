@@ -68,13 +68,21 @@ a:active, a {
     font-size: 2.5rem;
     color: white;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .navbar__icons {
     font-size: 2.5rem;
     padding-right: 6rem;
     color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.navbar__icons--img {
+  width: 50px;
+  height: 50px;
 }
 
 
